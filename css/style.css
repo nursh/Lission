@@ -1,0 +1,68 @@
+/****************
+  Colors
+****************/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Nunito", sans-serif;
+  line-height: 1.6;
+  color: #4d6ac4; }
+
+a,
+a:link,
+a:active {
+  text-decoration: none;
+  color: black; }
+
+.text {
+  color: #9b9eaa;
+  font-size: 1.6rem; }
+  .text--purple {
+    color: #4d6ac4; }
+
+.header {
+  padding: 1.5rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header__logo {
+    text-transform: uppercase;
+    font-family: "Cantarell", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem; }
+  .header__logo-image {
+    height: 2rem;
+    width: 2rem; }
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  align-items: center; }
+
+.nav__item:not(:last-child) {
+  margin-right: 3rem; }
+
+.nav__image {
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: #9b9eaa; }
+  .nav__image:hover {
+    fill: #4d6ac4; }
+
+.user {
+  display: flex; }
+  .user__avatar {
+    height: 3.5rem;
+    width: 3.5rem; }
+  .user__text {
+    align-self: center;
+    margin-left: 1rem; }
