@@ -1,0 +1,67 @@
+.info {
+  padding: 3rem 2rem;
+  padding-bottom: 2rem;
+
+  &__item {
+    display: flex;
+    place-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__icon {
+    margin-right: 2rem;
+  }
+
+  &__text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__map {
+    position: relative;
+    background-size: cover;
+    background-image: linear-gradient(
+        to right,
+        rgba(white, 0.5),
+        rgba(white, 0.5)
+      ),
+      url(../img/map.jpg);
+    height: 20rem;
+  }
+
+  &__details {
+    position: absolute;
+    width: 70%;
+    top: 15%;
+    right: 10%;
+    clip-path: polygon(0% 8%, 100% 0%, 100% 100%, 10% 100%);
+    border-radius: 1.5rem 0.5rem 0.5rem 3rem;
+    background: white;
+    padding: 0.8rem 1.2rem;
+    padding-left: 3.5rem;
+  }
+
+  &__marker {
+    width: 1rem;
+    height: 1rem;
+    background: $icon-color;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 0 0.5rem $light-marker-color, 
+                0 0 0 1rem $light-marker-color;
+
+    &--1 {
+      top: 30%;
+      left: 10%;
+    }
+
+    &--2 {
+      bottom: 3rem;
+      left: 45%;
+    }
+  }
+}

@@ -6,18 +6,34 @@
     color: $primary-color;
   }
 
+  &--darker {
+    color: darken($grey-color, 60%);
+  }
+
   &--big {
     font-size: 1.8rem;
+  }
+
+  &--small {
+    font-size: 1.4rem;
   }
 
   &--light {
     font-weight: 200;
   }
+
+  &--medium {
+    font-weight: 300;
+  }
+
+  &--upper {
+    text-transform: uppercase;
+  }
 }
 
 .title {
   color: $primary-color;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.8rem;
 
   &--big {

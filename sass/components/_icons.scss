@@ -6,6 +6,15 @@
   &--white {
     fill: white;
   }
+
+  &--grey {
+    fill: $grey-color;
+  }
+
+  &--small {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
 }
 
 .icon__container {
@@ -27,3 +36,4 @@
     margin-right: 4rem;
   }
 }
+
