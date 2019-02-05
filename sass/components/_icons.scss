@@ -1,0 +1,29 @@
+.icon {
+  height: 3rem;
+  width: 3rem;
+  fill: $icon-color;
+
+  &--white {
+    fill: white;
+  }
+}
+
+.icon__container {
+  padding: 1rem;
+  border: 0.1rem solid $primary-color;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  place-items: center;
+  margin-top: 2rem;
+  box-shadow: .3rem .5rem 1rem rgba(black, 0.2);
+
+  &--purple {
+    background: $icon-color;  
+  }
+
+  &:not(:last-child) {
+    margin-right: 4rem;
+  }
+}

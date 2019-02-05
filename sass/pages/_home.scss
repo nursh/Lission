@@ -2,3 +2,9 @@
   background: $background-color;
   padding: 4rem $main-padding;
 }
+
+.main-content {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1.3fr 2.5fr 1.3fr;
+}

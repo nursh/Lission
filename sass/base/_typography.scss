@@ -5,4 +5,22 @@
   &--purple {
     color: $primary-color;
   }
+
+  &--big {
+    font-size: 1.8rem;
+  }
+
+  &--light {
+    font-weight: 200;
+  }
+}
+
+.title {
+  color: $primary-color;
+  font-weight: 700;
+  font-size: 1.8rem;
+
+  &--big {
+    font-size: 2rem;
+  }
 }
