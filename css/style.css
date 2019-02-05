@@ -1,6 +1,9 @@
 /****************
   Colors
 ****************/
+/*******************
+  Padding
+*******************/
 *,
 *::before,
 *::after {
@@ -62,7 +65,40 @@ a:active {
   display: flex; }
   .user__avatar {
     height: 3.5rem;
-    width: 3.5rem; }
+    width: 3.5rem;
+    border-radius: 50%;
+    border: 0.2rem solid white;
+    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2); }
   .user__text {
     align-self: center;
     margin-left: 1rem; }
+
+.heading {
+  display: flex;
+  justify-content: space-between; }
+  .heading__dots {
+    align-self: center;
+    height: 3rem;
+    width: 3rem;
+    fill: #4d6ac4; }
+
+.trip__dates {
+  display: flex;
+  align-items: center; }
+  .trip__dates-image {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: #9b9eaa;
+    margin-right: 1rem; }
+  .trip__dates-date {
+    font-size: 1.8rem;
+    color: #9b9eaa; }
+
+.trip__location {
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: #4d6ac4; }
+
+.content {
+  background: #f2f5fa;
+  padding: 4rem 6rem; }

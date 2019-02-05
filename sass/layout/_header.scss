@@ -1,5 +1,5 @@
 .header {
-  padding: 1.5rem 6rem;
+  padding: 1.5rem $main-padding;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,6 +45,9 @@
   &__avatar {
     height: 3.5rem;
     width: 3.5rem;
+    border-radius: 50%;
+    border: 0.2rem solid white;
+    box-shadow: .2rem .2rem 1rem rgba(0, 0, 0, 0.2);
   }
 
   &__text {

@@ -1,0 +1,36 @@
+.heading {
+  display: flex;
+  justify-content: space-between;
+
+  &__dots {
+    align-self: center;
+    height: 3rem;
+    width: 3rem;
+    fill: $primary-color;
+  }
+}
+
+.trip {
+  &__dates {
+    display: flex;
+    align-items: center;
+
+    &-image {
+      height: 2.5rem;
+      width: 2.5rem;
+      fill: $grey-color;
+      margin-right: 1rem;
+    }
+
+    &-date {
+      font-size: 1.8rem;
+      color: $grey-color;
+    }
+  }
+
+  &__location {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: $primary-color;
+  }
+}
