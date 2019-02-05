@@ -19,21 +19,40 @@
 
 .icon__container {
   padding: 1rem;
-  border: 0.1rem solid $primary-color;
   border-radius: 50%;
   height: 5rem;
   width: 5rem;
   display: flex;
   place-items: center;
-  margin-top: 2rem;
-  box-shadow: .3rem .5rem 1rem rgba(black, 0.2);
+  background: white;
+
+  &--small {
+    height: 4rem;
+    width: 4rem;
+  }
 
   &--purple {
     background: $icon-color;  
   }
 
+  &--margin {
+    margin-top: 2rem;
+  }
+
+  &--border {
+    border: 0.1rem solid $primary-color;
+  }
+
+  &--shadow {
+    box-shadow: .3rem .5rem 1rem rgba(black, 0.2);
+  }
+
   &:not(:last-child) {
     margin-right: 4rem;
+  }
+
+  &--r-margin {
+    margin-right: 1rem !important;
   }
 }
 

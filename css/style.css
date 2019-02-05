@@ -31,6 +31,10 @@ a:active {
   font-size: 1.6rem; }
   .text--purple {
     color: #4d6ac4; }
+  .text--d-purple {
+    color: #2b354f; }
+  .text--lighter {
+    color: #b7b9c1; }
   .text--darker {
     color: #09090a; }
   .text--big {
@@ -50,6 +54,9 @@ a:active {
   font-size: 1.8rem; }
   .title--big {
     font-size: 2rem; }
+
+.m-bottom {
+  margin-bottom: 2rem; }
 
 .content-box {
   background: white;
@@ -73,18 +80,27 @@ a:active {
 
 .icon__container {
   padding: 1rem;
-  border: 0.1rem solid #4d6ac4;
   border-radius: 50%;
   height: 5rem;
   width: 5rem;
   display: flex;
   place-items: center;
-  margin-top: 2rem;
-  box-shadow: 0.3rem 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  background: white; }
+  .icon__container--small {
+    height: 4rem;
+    width: 4rem; }
   .icon__container--purple {
     background: #738ad1; }
+  .icon__container--margin {
+    margin-top: 2rem; }
+  .icon__container--border {
+    border: 0.1rem solid #4d6ac4; }
+  .icon__container--shadow {
+    box-shadow: 0.3rem 0.5rem 1rem rgba(0, 0, 0, 0.2); }
   .icon__container:not(:last-child) {
     margin-right: 4rem; }
+  .icon__container--r-margin {
+    margin-right: 1rem !important; }
 
 .online-button {
   width: 1rem;
@@ -223,6 +239,43 @@ a:active {
   font-size: 3.5rem;
   font-weight: 300;
   color: #4d6ac4; }
+
+.notifications__heading {
+  padding: 2rem; }
+
+.notifications__sorting {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between; }
+
+.notifications__dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.notifications__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+
+.notifications__item {
+  display: flex;
+  padding: 1.5rem;
+  align-items: center;
+  position: relative; }
+  .notifications__item--selected {
+    background: rgba(50, 205, 50, 0.08);
+    border-left: 0.3rem solid #32CD32; }
+  .notifications__item::before {
+    position: absolute;
+    top: 0;
+    content: '';
+    background: linear-gradient(to right, white, #4d6ac4);
+    width: 100%;
+    height: .1rem; }
+
+.notifications__details {
+  flex: 1; }
 
 .content {
   background: #f2f5fa;

@@ -1,0 +1,49 @@
+.notifications {
+
+  &__heading {
+    padding: 2rem;
+  }
+
+  &__sorting {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__item {
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+    position: relative;
+
+    &--selected {
+      background: rgba($notification-color, 0.08);
+      border-left: .3rem solid $notification-color;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      content: '';
+      background: linear-gradient(to right, white, $primary-color);
+      width: 100%;
+      height: .1rem;
+    }
+  }
+
+  &__details {
+    flex: 1;
+  }
+}
