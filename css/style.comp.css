@@ -1,6 +1,9 @@
 /****************
   Colors
 ****************/
+/*******************
+  Padding
+*******************/
 *,
 *::before,
 *::after {
@@ -16,3 +19,347 @@ body {
   font-family: "Nunito", sans-serif;
   line-height: 1.6;
   color: #4d6ac4; }
+
+a,
+a:link,
+a:active {
+  text-decoration: none;
+  color: black; }
+
+.text {
+  color: #9b9eaa;
+  font-size: 1.6rem; }
+  .text--underline {
+    text-decoration: underline; }
+  .text--purple {
+    color: #4d6ac4; }
+  .text--d-purple {
+    color: #2b354f; }
+  .text--lighter {
+    color: #b7b9c1; }
+  .text--darker {
+    color: #666a79; }
+  .text--big {
+    font-size: 1.8rem; }
+  .text--small {
+    font-size: 1.4rem; }
+  .text--light {
+    font-weight: 200; }
+  .text--medium {
+    font-weight: 300; }
+  .text--upper {
+    text-transform: uppercase; }
+
+.title {
+  color: #4d6ac4;
+  font-weight: 600;
+  font-size: 1.8rem; }
+  .title--big {
+    font-size: 2rem; }
+
+.m-bottom {
+  margin-bottom: 2rem; }
+
+.p-bottom {
+  padding-bottom: 1rem; }
+
+.content-box {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.1); }
+  .content-box:not(:last-child) {
+    margin-bottom: 3rem; }
+  .content-box--no-margin {
+    margin: 0 !important; }
+
+.icon {
+  height: 3rem;
+  width: 3rem;
+  fill: #738ad1; }
+  .icon--white {
+    fill: white; }
+  .icon--grey {
+    fill: #c4c6cd; }
+  .icon--small {
+    height: 2.5rem;
+    width: 2.5rem; }
+  .icon--tiny {
+    height: 2rem;
+    width: 2rem; }
+
+.icon__container {
+  padding: 1rem;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  place-items: center;
+  background: white; }
+  .icon__container--small {
+    height: 3.5rem;
+    width: 3.5rem; }
+  .icon__container--tiny {
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: .3rem; }
+  .icon__container--purple {
+    background: #738ad1; }
+  .icon__container--margin {
+    margin-top: 2rem; }
+  .icon__container--border {
+    border: 0.1rem solid #4d6ac4; }
+  .icon__container--shadow {
+    box-shadow: 0.3rem 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .icon__container:not(:last-child) {
+    margin-right: 4rem; }
+  .icon__container--r-margin {
+    margin-right: 1rem !important; }
+
+.online-button {
+  width: 1rem;
+  height: 1rem;
+  background: #32CD32;
+  border-radius: 50%;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  box-shadow: 0 0 0 0.5rem #c2f0c2; }
+
+.profile {
+  position: relative; }
+  .profile__details {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem; }
+    .profile__details__contact {
+      display: flex;
+      justify-content: center; }
+  .profile__image {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+.info {
+  padding: 3rem 2rem;
+  padding-bottom: 2rem; }
+  .info__item {
+    display: flex;
+    place-items: center; }
+    .info__item:not(:last-child) {
+      margin-bottom: 2rem; }
+  .info__icon {
+    margin-right: 2rem; }
+  .info__text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+  .info__map {
+    position: relative;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/map.jpg);
+    height: 20rem; }
+  .info__details {
+    position: absolute;
+    width: 70%;
+    top: 15%;
+    right: 10%;
+    clip-path: polygon(0% 8%, 100% 0%, 100% 100%, 10% 100%);
+    border-radius: 1.5rem 0.5rem 0.5rem 3rem;
+    background: white;
+    padding: 0.8rem 1.2rem;
+    padding-left: 3.5rem; }
+  .info__marker {
+    width: 1rem;
+    height: 1rem;
+    background: #738ad1;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 0 0.5rem rgba(115, 138, 209, 0.35), 0 0 0 1rem rgba(115, 138, 209, 0.35); }
+    .info__marker--1 {
+      top: 30%;
+      left: 10%; }
+    .info__marker--2 {
+      bottom: 3rem;
+      left: 45%; }
+
+.plan {
+  position: relative;
+  padding: 1.5rem; }
+  .plan__add {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: calc(100% - 2.5rem); }
+  .plan__icon {
+    position: absolute;
+    z-index: 9999;
+    top: -1.8rem;
+    left: 2.5rem; }
+    .plan__icon--line::before, .plan__icon--line--grey::before {
+      content: '';
+      position: absolute;
+      width: .2rem;
+      height: 4.7rem;
+      z-index: -1;
+      bottom: 100%;
+      left: calc(50% - .1rem);
+      background-color: #738ad1; }
+    .plan__icon--line--grey::before {
+      background-color: #e0e1e5; }
+  .plan__location {
+    padding-left: 6rem; }
+    .plan__location__town {
+      display: flex;
+      justify-content: space-between; }
+    .plan__location__details {
+      padding-bottom: 1rem; }
+  .plan__destination {
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    display: flex;
+    position: relative; }
+    .plan__destination__details, .plan__destination__trips {
+      flex: 1; }
+    .plan__destination__trips {
+      padding-left: 2rem;
+      display: flex;
+      justify-content: space-between; }
+      .plan__destination__trips__details {
+        display: flex; }
+      .plan__destination__trips__info:not(:first-child) {
+        margin-left: 5rem; }
+    .plan__destination__towns {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 2rem; }
+    .plan__destination--first::before {
+      position: absolute;
+      top: 0;
+      content: '';
+      background: linear-gradient(to right, white, #4d6ac4);
+      width: 100%;
+      height: .1rem; }
+  .plan__attachment {
+    padding-left: 6rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-end; }
+  .plan__file {
+    margin-left: 1rem; }
+
+.header {
+  padding: 1.5rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header__logo {
+    text-transform: uppercase;
+    font-family: "Cantarell", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem; }
+  .header__logo-image {
+    height: 2rem;
+    width: 2rem; }
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  align-items: center; }
+
+.nav__item:not(:last-child) {
+  margin-right: 3rem; }
+
+.nav__image {
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: #9b9eaa; }
+  .nav__image:hover {
+    fill: #4d6ac4; }
+
+.user {
+  display: flex; }
+  .user__avatar {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    border: 0.2rem solid white;
+    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2); }
+  .user__text {
+    align-self: center;
+    margin-left: 1rem; }
+
+.heading {
+  display: flex;
+  justify-content: space-between; }
+  .heading__dots {
+    align-self: center;
+    height: 3rem;
+    width: 3rem;
+    fill: #4d6ac4; }
+
+.trip__dates {
+  display: flex;
+  align-items: center; }
+  .trip__dates-image {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: #9b9eaa;
+    margin-right: 1rem; }
+  .trip__dates-date {
+    font-size: 1.8rem;
+    color: #9b9eaa; }
+
+.trip__location {
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: #4d6ac4; }
+
+.notifications__heading {
+  padding: 2rem; }
+
+.notifications__sorting {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between; }
+
+.notifications__dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.notifications__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+
+.notifications__item {
+  display: flex;
+  padding: 1.5rem;
+  align-items: center;
+  position: relative;
+  overflow: hidden; }
+  .notifications__item--selected, .notifications__item:hover {
+    background: rgba(50, 205, 50, 0.08);
+    border-left: 0.3rem solid #32CD32; }
+  .notifications__item::before {
+    position: absolute;
+    top: 0;
+    content: '';
+    background: linear-gradient(to right, white, #4d6ac4);
+    width: 100%;
+    height: .1rem; }
+
+.notifications__details {
+  flex: 1; }
+
+.content {
+  background: #f2f5fa;
+  padding: 4rem 6rem; }
+
+.main-content {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1.3fr 2.5fr 1.3fr;
+  grid-column-gap: 4rem; }

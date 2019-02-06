@@ -1,0 +1,102 @@
+.plan {
+
+  position: relative;
+  padding: 1.5rem;
+
+  &__add {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: calc(100% - 2.5rem);
+  }
+
+  &__icon {
+    position: absolute;
+    z-index: 9999;
+    top: -1.8rem;
+    left: 2.5rem;
+
+    &--line {
+
+      &::before,
+      &--grey::before {
+        content: '';
+        position: absolute;
+        width: .2rem;
+        height: 4.7rem;
+        z-index: -1;
+        bottom: 100%;
+        left: calc(50% - .1rem);
+        background-color: $icon-color;
+      }
+
+      &--grey::before {
+        background-color: lighten($grey-color, 25%);
+      }
+    }
+  }
+
+  &__location {
+    padding-left: 6rem;
+
+    &__town {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__details {
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__destination {
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    display: flex;
+    position: relative;
+
+    &__details,
+    &__trips {
+      flex: 1;
+    } 
+
+    &__trips {
+      padding-left: 2rem;
+      display: flex;
+      justify-content: space-between;
+
+      &__details {
+        display: flex;
+      }
+
+      &__info:not(:first-child) {
+        margin-left: 5rem;
+      }
+    }
+
+    &__towns {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 2rem;
+    }
+
+    &--first::before {
+      position: absolute;
+      top: 0;
+      content: '';
+      background: linear-gradient(to right, white, $primary-color);
+      width: 100%;
+      height: .1rem;
+    }
+  }
+
+  &__attachment {
+    padding-left: 6rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__file {
+    margin-left: 1rem;
+  }
+}

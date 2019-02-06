@@ -27,8 +27,10 @@
     padding: 1.5rem;
     align-items: center;
     position: relative;
+    overflow: hidden;
 
-    &--selected {
+    &--selected,
+    &:hover {
       background: rgba($notification-color, 0.08);
       border-left: .3rem solid $notification-color;
     }

@@ -2,6 +2,10 @@
   color: $grey-color;
   font-size: 1.6rem;
 
+  &--underline {
+    text-decoration: underline;
+  }
+
   &--purple {
     color: $primary-color;
   }
@@ -15,7 +19,7 @@
   }
 
   &--darker {
-    color: darken($grey-color, 60%);
+    color: darken($grey-color, 20%);
   }
 
   &--big {
@@ -52,4 +56,8 @@
 
 .m-bottom {
   margin-bottom: 2rem;
+}
+
+.p-bottom {
+  padding-bottom: 1rem;
 }

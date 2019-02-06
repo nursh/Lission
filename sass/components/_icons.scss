@@ -8,12 +8,17 @@
   }
 
   &--grey {
-    fill: $grey-color;
+    fill: lighten($grey-color, 15%);
   }
 
   &--small {
     height: 2.5rem;
     width: 2.5rem;
+  }
+
+  &--tiny {
+    height: 2rem;
+    width: 2rem;
   }
 }
 
@@ -27,8 +32,14 @@
   background: white;
 
   &--small {
-    height: 4rem;
-    width: 4rem;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+
+  &--tiny {
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: .3rem;
   }
 
   &--purple {
